@@ -78,7 +78,7 @@ model = pickle.load(amz_mb_file)
 amz_mb_file.close()
 
 amz_tfid_file = open('amz_tfid_model.pkl', 'rb')
-tfidf_vectorizer = pickle.load(amz_tfid_file)
+tfid_vector = pickle.load(amz_tfid_file)
 amz_tfid_file.close()
 
 
@@ -92,7 +92,7 @@ def hello_world():
 
         mydict = request.form
         text = mydict["summary"]
-        prediction = test(text, model, tfidf_vectorizer)
+        prediction = test(text, model, tfid_vector)
 
         return render_template('index.html', genre=prediction, text=str(text)[:100], showresult=True)
     return render_template('index.html')
