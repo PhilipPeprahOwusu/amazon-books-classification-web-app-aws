@@ -92,7 +92,7 @@ def hello_world():
 
         mydict = request.form
         text = mydict["summary"]
-        prediction = test(text, model, tfidf_vectorizer)
+        prediction = test(text, model, tfid_vector)
 
         return render_template('index.html', genre=prediction, text=str(text)[:100], showresult=True)
     return render_template('index.html')
