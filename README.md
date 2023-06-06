@@ -1,5 +1,6 @@
 
   <h1>Amazon Book Classification Project</h1>
+  Documentation prepared by <a href="https://github.com/PhilipPeprahOwusu">Philip Peprah Owusu</a>
   <p>This project focuses on the task of classifying book genres based on their summaries using machine learning techniques. The objective is to develop a model that can accurately predict the genre of a book by analyzing its summary text. The project involves data preprocessing steps, including text cleaning, removing stopwords, lemmatizing, and stemming. Various classification models are trained and evaluated for their performance in genre prediction. The project concludes with saving the best-performing model and vectorizer for future use. Overall, this project demonstrates the application of machine learning in automating book genre classification based on summary texts.</p>
 
   <h2>Importing Libraries</h2>
